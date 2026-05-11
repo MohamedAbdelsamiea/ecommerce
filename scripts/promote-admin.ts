@@ -20,8 +20,8 @@ const email = process.argv[2]?.toLowerCase().trim();
 
 async function main() {
   if (!email) {
-    console.error("Usage: npx tsx prisma/promote-admin.ts <email>");
-    console.error("Example: npx tsx prisma/promote-admin.ts user@example.com");
+    console.error("Usage: npm run db:promote-admin -- <email>");
+    console.error("Example: npm run db:promote-admin -- user@example.com");
     process.exit(1);
   }
 

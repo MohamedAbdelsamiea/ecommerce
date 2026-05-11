@@ -35,7 +35,6 @@ async function main() {
   if (columns.length === 0) {
     console.log("orderNumber column not found in the database.");
     console.log("Run 'npx prisma db push' first to add the column, then re-run this script.");
-    console.log("Full command: npm run db:push && npm run db:backfill-order-numbers");
     await prisma.$disconnect();
     return;
   }
